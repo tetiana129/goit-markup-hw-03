@@ -1,0 +1,247 @@
+/*текст черный #212121 заголовки, ссылки-навигация, фио
+         серый #757575 текст, телефон - основной!!!
+         белый #FFFFFF герой, в футере адрес
+         rgba(255, 255, 255, 0.6); в футере - э-мейл,телефон
+         синий #2196F3 header, лого 
+ */
+
+ /*фон  белый       #FFFFFF - основной!!!
+        св-серый    #F5F4FA - фон фильтров в портфолио
+        темн-серый  #2F303A */
+
+        :root {
+            --primary-text-color: #757575;
+            --title-text-color: #212121;
+            --second-text-color: rgba(255, 255, 255, 0.6);
+            --accent-color: #2196F3;
+
+            --withe-color: #ffffff;
+            --bgc-dark-grey: #2F303A;
+            --bgc-light-grey: #F5F4FA; 
+        }
+        
+        
+        /*Основные настройки для все страниц*/
+        
+        body {
+                color: var(--primary-text-color);
+                background-color: var(--withe-color);
+        
+                font-family: Roboto, sans-serif;
+                font-size: 14px;
+                line-height: 1.71;
+                letter-spacing: 0.03em;
+                
+        }
+        
+                           
+        
+        /*Свойства header,  footer */
+
+        .logo, .logo-footer, .link {
+            text-decoration: none;
+        }
+
+        .site-nav, .auth-nav {
+            list-style: none;
+        }
+
+         
+        /*Свойства logo*/
+        
+       .logo-web {
+            color: var(--accent-color);    
+        }
+        
+        .logo-footer {
+            color: var(--withe-color)
+        }
+
+        .logo {
+            color: var(--title-text-color);
+        }
+        
+        .logo, .logo-footer, .logo-web {
+            
+            font-family: "Raleway", sans-serif;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 1.2;
+        }
+        
+        /*Свойства site-nav*/
+        
+        .site-nav, .auth-nav {
+           
+            font-weight: 500;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+        }
+        
+        .site-nav .link {
+            color: var(--title-text-color);
+        }
+        
+        .site-nav .link:hover,
+        .site-nav .link:focus {
+            color: var(--accent-color);
+        }
+        
+        .site-nav .link.current{
+             color: var(--accent-color);
+        }
+        
+        /*Свойства auth-nav*/
+        
+        
+        .auth-nav .link{
+            color: var(--primary-text-color);
+        }
+        .auth-nav .link:hover,
+        .auth-nav .link:focus {
+            color: var(--accent-color);
+        }
+        
+        /*Свойства address*/
+        
+        .address {
+            color: var(--withe-color);
+            background-color: var(--bgc-dark-grey);
+            font-style: normal;
+        }
+        
+        .address .mail,
+        .address .tel {
+            color: var(--second-text-color);
+        }
+        
+        /*Свойства главной страницы сайта*/
+        
+        /*Свойства герой - hero*/
+        .hero {
+            background-color: var(--bgc-dark-grey); 
+        }
+        
+        .hero .hero-title,
+        .hero .hero-button {
+            color: var(--withe-color);
+        }
+        
+        .hero .hero-button {
+            background-color: var(--accent-color);
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.87;
+            letter-spacing: 0.06em;
+            text-align: center;
+        }
+        
+        .hero .hero-title {
+            
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 1.36;
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;                     
+        }
+        
+        /* Свойства section */
+        
+        
+        /*Свойства section-block раздел Особенности*/
+        
+        .features { 
+            list-style: none;
+
+        }
+
+        .features-heading {
+            color: var(--title-text-color);
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+        }
+        
+        /*Свойства разделов Чем мы занимаемся и Наша команда*/
+        
+         /*Заголовки секций*/
+         .section-title {
+             color: var(--title-text-color);
+             font-weight: 700;
+             font-size: 36px;
+             line-height: 1.17;
+        }
+
+        .works {
+            list-style: none;
+        }
+
+        .team {
+            list-style: none;
+        }
+        
+        
+        .section-team {
+            background-color: var(--bgc-light-grey);
+        }
+        
+        /*Заголовки имен */
+        .team-name {
+            color: var(--title-text-color);
+            font-weight: 500;
+            
+        }
+        /*Заголовки должностей*/
+        .team-name, .team-position {
+            font-size: 16px;
+            line-height: 1.19;              
+        }
+        
+        
+        /*Свойства портфолио filter*/
+
+        .filter-list {
+            list-style: none;
+        }
+
+                
+        .filter .link {
+            color: var(--title-text-color);
+            background-color: var(--bgc-light-grey);
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.62;
+        }
+        
+        .filter .link:hover,
+        .filter .link:focus {
+            color: var(--withe-color);
+            background-color: var(--accent-color);
+        }
+        .filter .link.current {
+            color: var(--withe-color);
+            background-color: var(--accent-color);     
+        }
+        
+        /*Свойства портфолио project*/
+
+        .project-list {
+            list-style: none;
+        }
+        
+        .project .project-title {
+            color: var(--title-text-color);
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 2;
+            letter-spacing: 0.06em;
+        }
+        .project .project-text {
+            font-size: 16px;
+            line-height: 1.87;
+        }
+        
+        
+        
