@@ -1,0 +1,209 @@
+/*текст черный #212121 заголовки, ссылки-навигация, фио
+         серый #757575 текст, телефон - основной!!!
+         белый #FFFFFF герой, в футере адрес
+         rgba(255, 255, 255, 0.6); в футере - э-мейл,телефон
+         синий #2196F3 header, лого 
+ */
+
+ /*фон  белый       #FFFFFF - основной!!!
+        св-серый    #F5F4FA - фон фильтров в портфолио
+        темн-серый  #2F303A */
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --second-text-color: rgba(255, 255, 255, 0.6);
+    --accent-color: #2196F3;
+    --withe-color: #ffffff;
+    --bgc-dark-grey: #2F303A;
+    --bgc-light-grey: #F5F4FA; 
+}
+
+
+/*Основные настройки для все страниц*/
+
+body {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        color: var(--primary-text-color);
+        background-color: var(--withe-color);
+    }
+
+ /*Убираем маркеры списков*/
+
+ul {list-style: none;}
+
+/*Убираем подчеркивание у ссылок*/
+.link {
+    text-decoration: none;
+}
+
+
+/*Свойства header,  footer */
+ 
+/*Свойства logo*/
+
+.logo .logo-web {
+    color: var(--accent-color);    
+}
+
+.logo .logo-footer {
+    color: var(--withe-color)
+}
+
+.logo {
+    color: var(--title-text-color);
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+/*Свойства site-nav*/
+
+.site-nav {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.site-nav .link {
+    color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current{
+     color: var(--accent-color);
+}
+
+/*Свойства auth-nav*/
+
+.auth-nav {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.auth-nav .link{
+    color: var(--primary-text-color);
+}
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+    color: var(--accent-color);
+}
+
+/*Свойства address*/
+
+.address {
+    color: var(--withe-color);
+    background-color: var(--bgc-dark-grey);
+    font-style: normal;
+}
+
+.address .mail,
+.address .tel {
+    color: var(--second-text-color);
+}
+
+/*Свойства главной страницы сайта*/
+
+/*Свойства герой - hero*/
+.hero {
+    background-color: var(--bgc-dark-grey); 
+}
+
+.hero .hero-title,
+.hero .hero-button {
+    color: var(--withe-color);
+}
+
+.hero .hero-button {
+    background-color: var(--accent-color);
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
+.hero .hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Свойства section */
+
+
+/*Свойства section-block раздел Особенности*/
+
+.section-block {
+    color: var(--title-text-color);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*Свойства разделов Чем мы занимаемся и Наша команда*/
+
+ /*Заголовки секций*/
+ .section-title {
+     font-weight: bold;
+     font-size: 36px;
+     color: var(--title-text-color);
+}
+
+/*Цвет секции Наша команда*/
+.section-team {
+    background-color: var(--bgc-light-grey);
+}
+
+/*Заголовки имен */
+.section-name {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--title-text-color);
+}
+/*Заголовки должностей*/
+.section-position {
+    font-size: 16px;
+}
+
+
+/*Свойства портфолио filter*/
+
+.filter .link {
+    color: var(--title-text-color);
+    background-color: var(--bgc-light-grey);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.filter .link:hover,
+.filter .link:focus {
+    color: var(--withe-color);
+    background-color: var(--accent-color);
+}
+.filter .link.current {
+    color: var(--withe-color);
+    background-color: var(--accent-color);     
+}
+
+/*Свойства портфолио project*/
+
+.project .project-title {
+    color: var(--title-text-color);
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.06em;
+}
+.project .project-text {
+    font-size: 16px;
+}
+
+
