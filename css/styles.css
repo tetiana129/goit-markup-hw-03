@@ -37,7 +37,7 @@
         .container {
             margin-left: auto;
             margin-right: auto;
-            width: 1200px;
+            width: 1230px;
             padding-left: 15px;
             padding-right: 15px;
             outline: 2px solid tomato;
@@ -414,10 +414,18 @@
         }
 
         .project-list {
+            display: flex;
+            flex-wrap: wrap;
+
             list-style: none;
 
             padding: 0;
             margin: 0;
+        }
+
+        .project-list .item {
+            width: 370px;
+            margin-right: 30px;
         }
         
         .project-list img {
