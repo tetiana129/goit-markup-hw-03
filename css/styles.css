@@ -47,7 +47,9 @@
                
         /*Свойства header,  footer */
 
+        
         .logo, .logo-footer, .link {
+            
             text-decoration: none;
         }
 
@@ -77,10 +79,18 @@
             font-size: 26px;
             line-height: 1.2;
         }
+
+        .main-nav {
+            display: flex;
+            align-items: center;
+        }
         
         /*Свойства site-nav*/
-        
+
+                
         .site-nav, .auth-nav {
+            display: flex;
+
             padding: 0;
             margin: 0;
            
@@ -88,8 +98,24 @@
             line-height: 1.14;
             letter-spacing: 0.02em;
         }
+
+        .site-nav {
+            margin-left: 93px;
+        }
+
+        .auth-nav {
+            margin-left: auto;
+        }
+
+        .site-nav .item + .item {
+            margin-left: 50px;
+        }
         
         .site-nav .link {
+            display: block;
+            padding-top: 21px;
+            padding-bottom: 21px;
+
             color: var(--title-text-color);
         }
         
@@ -101,15 +127,19 @@
         .site-nav .link.current{
              color: var(--accent-color);
         }
-        
+
+                
         /*Свойства auth-nav*/
 
-        .auth-nav {
-            margin: 0;
-        }
-        
+        .auth-nav .item + .item {
+            margin-left: 50px;
+        }        
         
         .auth-nav .link{
+            display: block;
+            padding-top: 21px;
+            padding-bottom: 21px;
+
             color: var(--primary-text-color);
         }
         .auth-nav .link:hover,
@@ -223,6 +253,8 @@
         /*Свойства section-block раздел Особенности*/
         
         .features { 
+            display: flex;
+
             padding: 0;
             margin: 0;
 
@@ -231,6 +263,10 @@
 
         .features p {
             margin: 0;
+        }
+
+        .features .item + .item {
+            margin-left: 30px;
         }
 
         
@@ -251,6 +287,7 @@
          .section-title {
             padding: 0;
             margin: 0px 0px 50px;
+            text-align: center;
 
             color: var(--title-text-color);
             font-weight: 700;
@@ -264,16 +301,28 @@
 
         
         .works {
+            display: flex;
+
             list-style: none;
 
             padding: 0;
             margin: 0;
         }
 
+        .works .item + .item {
+            margin-left: 30px;
+        }
+
         .team {
+            display: flex;
+
             list-style: none;
 
             padding: 0;
+        }
+
+        *.team .item + .item {
+            margin-left: 30px;
         }
         
         
@@ -311,11 +360,21 @@
         }
 
         .filter-list {
+            display: flex;
             list-style: none;
 
             padding: 0;
-            margin: 0;
-            
+            margin: 0;           
+        }
+
+        .filter-list .item + .item {
+            margin-left: 8px;
+        }
+
+        .filter-list {
+            justify-content: center;
+            /*margin-right: auto;
+            margin-left: auto;*/
         }
 
                 
