@@ -426,8 +426,13 @@
         .project-list .item {
             width: 370px;
             margin-right: 30px;
+           /* background-color: tomato;*/
         }
         
+        .project-list .item:nth-child(3n) {
+            margin-right: 0;
+        }
+
         .project-list img {
             margin: 0px 0px 20px 0px;
         }
