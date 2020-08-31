@@ -423,9 +423,14 @@
             margin: 0;
         }
 
+        .project-list {
+            margin-left: auto;
+        }
+
         .project-list .item {
             width: 370px;
             margin-right: 30px;
+            margin-bottom: 30px;
            /* background-color: tomato;*/
         }
         
