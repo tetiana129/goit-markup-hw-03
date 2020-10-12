@@ -263,6 +263,10 @@
             list-style: none;          
         }
 
+        .features .item {
+            width: 270px;
+        }
+
         .features p {
             margin: 0;
         }
